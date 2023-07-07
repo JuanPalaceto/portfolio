@@ -1,0 +1,200 @@
+@import "variables";
+
+.bg-header {
+    background: $bg-header;
+}
+
+.navbar-items {
+    gap: 1rem;
+    & li {
+        position: relative;
+        &::before {
+            content: "";
+            border-bottom: 2px solid #fff;
+            bottom: 0;
+            display: inline-block;
+            position: absolute;
+            transition: width 0.4s ease-in;
+            width: 0;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+    }
+}
+
+.btn-main {
+    background-color: $bg-main;
+    border: 2px solid #9c9294;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: rgba($bg-main, 0.8);
+    }
+    &-download {
+        border-color: #fff;
+        color: #fff;
+        transition: all 0.3s ease-in;
+        &:hover {
+            background-color: #fff;
+            color: $bg-main;
+        }
+    }
+}
+
+.banner,
+.sobre-mi {
+    background-color: $bg-main;
+}
+
+
+.portfolio,
+.contacto,
+.sep-modal {
+    & h2 {
+        color: $color-secundario;
+    }
+    & .separador {
+        & h3 {
+            color: $color-secundario;
+            &::before,
+            &::after {
+                border-bottom: 4px solid $color-secundario;
+            }
+        }
+    }
+    & a {
+        color: $color-secundario;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.portfolio-item {
+    position: relative;
+    & a {
+        display: block;
+        position: relative;
+        & h4 {
+            color: #38495a;
+        }
+        &:hover::before {
+            background-color: rgba($bg-main, 0.9);
+            border-radius: 10px;
+            bottom: -10px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &:hover::after {
+            color: #fff;
+            content: "\F4FE";
+            font-family: "bootstrap-icons";
+            font-size: 7.5rem;
+            font-weight: 700;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.separador {
+    h3 {
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: "";
+            border-bottom: 4px solid #fff;
+            border-radius: 5px;
+            right: 0;
+            margin-right: 50px;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-60%);
+            width: 70px;
+        }
+        &::after {
+            content: "";
+            border-bottom: 4px solid #fff;
+            border-radius: 5px;
+            left: 0;
+            margin-left: 50px;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-60%);
+            width: 70px;
+        }
+    }
+}
+
+.formulario {
+    & input, textarea {
+        border: none;
+        border-bottom: 1px solid #e1e5e8;
+        border-radius: 0;
+        color: $color-grisesito;
+        font-weight: 500;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    & label {
+        color: $color-grisesito;
+        font-weight: 500;
+    }
+}
+
+.footer {
+    background-color: $bg-footer;
+    & h5 {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    & p {
+        color: #fff;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+.redes {
+    & a {
+        border: 2px #fff solid;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        height: 40px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+        & i {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background-color: #fff;
+            color: $bg-footer;
+        }
+    }
+}
+
+.copy {
+    background-color: $bg-copy;
+}
+
+// Para un ícono nomás
+.bi-x {
+    -webkit-text-stroke: 1px;
+}
+
+@media screen and (max-width: 767px) {
+    .w-25 {
+        width: 50% !important;
+    }
+}

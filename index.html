@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container py-2">
+                <a class="navbar-brand" href="#"><h4 class="m-0 text-white fw-bold">JUAN PALACETO</h4></a>
+                <button class="d-lg-none d-block btn btn-main" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-white fw-bold">MENU </span><i class="bi bi-list text-white fw-bold"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-items">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fw-bold" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#sobre-mi">SOBRE MÍ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container py-5">
+                <div class="text-center text-white">
+                    <img class="w-25 mb-4" src="img/avataaars.svg" alt="avatar">
+                    <h1 class="fw-bold m-0">JUAN PALACETO</h1>
+                    <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                    <p>Maquetador Web - Entusiasta - Autodidacta</p=>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container py-5">
+                <div class="text-center text-white">
+                    <h2 class="fw-bold m-0">PORTFOLIO</h2>
+                    <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#lemonPieModal">
+                            <img class="img-fluid" src="img/lemon-pie.jpeg" alt="lemon pie">
+                            <h4 class="fw-bold">Lemon Pie</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#cvBatmanModal">
+                            <img class="img-fluid" src="img/CVBatman.png" alt="cv batman">
+                            <h4 class="fw-bold">CV Batman</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#supersModal">
+                            <img class="img-fluid" src="img/super.png" alt="supers">
+                            <h4 class="fw-bold">Súpers</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#petShopModal">
+                            <img class="img-fluid" src="img/petshop.jpeg" alt="Pet shop">
+                            <h4 class="fw-bold">Pet Shop</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#pizzeriaModal">
+                            <img class="img-fluid" src="img/piza.jpeg" alt="Pizzeria">
+                            <h4 class="fw-bold">Pizzería</h4>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#gameShopModal">
+                            <img class="img-fluid" src="img/gameshop.jpeg" alt="Game shop">
+                            <h4 class="fw-bold">Game Shop</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobre-mi" id="sobre-mi">
+            <div class="container py-5">
+                <div class="text-center text-white">
+                    <h2 class="fw-bold m-0">SOBRE MÍ</h2>
+                    <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4 offset-lg-2">
+                        <p class="text-white">
+                            Mi nombre es Juan Pablo Palaceto Céspedes. Soy Egresado de Licenciado en Tecnologías de la Información de la Facultad de Comercio y Administración Victoria, perteneciente a la Universidad Autónoma de Tamaulipas.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="text-white">
+                            Desde muy chico surgió mi interés por las computadoras y la tecnología en general. Cuando cursé el bachillerato descubrí mi pasión por la programación y hoy sigo formandome para poder seguir aprendiendo y ser cada día mejor.
+                        </p>
+                    </div>
+                    <div class="col-12 text-center mt-4">
+                        <button class="btn btn-main-download" onclick="window.open('https://www.linkedin.com/in/juan-palaceto/', '_blank');">
+                            <i class="bi bi-download me-2"></i>Descargar CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="container py-5">
+                <div class="text-center text-white">
+                    <h2 class="fw-bold m-0">CONTÁCTAME</h2>
+                    <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <form action="#" class="mt-3 formulario px-lg-5">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre Completo">
+                                <label for="floatingNombre">Nombre Completo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="floatingTel" placeholder="Número de Teléfono">
+                                <label for="floatingTel">Número de Teléfono</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Deja tu mensaje" id="floatingMensaje" style="height: 100px"></textarea>
+                                <label for="floatingMensaje">Mensaje</label>
+                            </div>
+                            <div>
+                                <button class="btn btn-main text-white border-0 px-3 lh-lg mt-3" onclick="event.preventDefault(); window.open('mailto:jpalaceto@hotmail.com');">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="container py-5">
+                <div class="row gy-5 text-center">
+                    <div class="col-lg-4">
+                        <h5>MI LUGAR</h5>
+                        <p>
+                            Ciudad Victoria
+                            <br>
+                            Tamaulipas, México
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>SIGAMOS CONECTADOS</h5>
+                        <div class="row justify-content-center redes">
+                            <div class="col-auto px-1">
+                                <a href="https://www.facebook.com/Juan.Palaceto/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            </div>
+                            <div class="col-auto px-1">
+                                <a href="https://twitter.com/JuanPalaceto" target="_blank"><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="col-auto px-1">
+                                <a href="https://www.linkedin.com/in/juan-palaceto/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <div class="col-auto px-1">
+                                <a href="https://github.com/JuanPalaceto" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>SOBRE MÍ</h5>
+                        <p>
+                            Soy una persona que le gusta aprender. Actualmente tengo conocimientos de desarrollo web con ASP.NET.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copy">
+            <div class="container py-3 text-center">
+                <p class="m-0 text-white">Copyright © Mi sitio 2023</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Modales -->
+    <!-- Lemon Pie -->
+    <div class="modal fade" id="lemonPieModal" tabindex="-1" aria-labelledby="lemonPieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">LEMON PIE</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/lemon-pie.jpeg" alt="lemon pie">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Este primer maquetado es con los elementos básicos de HTML, como insertar imagenes, títulos, párrafos y el uso de listas ordenadas y no ordenadas con el uso de etiquetas semánticas.</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/Lemon-Pie/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Batman -->
+    <div class="modal fade" id="cvBatmanModal" tabindex="-1" aria-labelledby="cvBatmanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">CV BATMAN</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/CVBatman.png" alt="cv batman">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Práctica de maquetado con un poco de estilos como background color y color de la fuente, padding y alineación de elementos.</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/cv-batman-sass/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Supers -->
+    <div class="modal fade" id="supersModal" tabindex="-1" aria-labelledby="supersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">SÚPERS</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/super.png" alt="super heroes">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Ejemplo de una interfaz de aplicación, hecha como practica para el posicionamiento de elementos. Inlcuye pseudoselectores, pseudoelementos y el ejemplo de un formulario.</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/Heroes-form/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Shop -->
+    <div class="modal fade" id="petShopModal" tabindex="-1" aria-labelledby="petShopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">PET SHOP</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/petshop.jpeg" alt="pet shop">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Práctica de maquetación de una página web de una tienda de mascotas un poco más completa y responsiva, hecha para practicar algo de flexbox, un ejemplo de formulario, así como uso de pseudoselectores.</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/PetShop/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pizeria -->
+    <div class="modal fade" id="pizzeriaModal" tabindex="-1" aria-labelledby="pizzeriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">PIZZERÍA</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/piza.jpeg" alt="pizzeria">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Ejercicio de una página de una pizzería, realizada para reforzar un poco el uso de flexbox y comenzar a familiarizarse con elementos típicos de un sitio web como navbar, footer, secciones...</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/Pizzeria/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Shop -->
+    <div class="modal fade" id="gameShopModal" tabindex="-1" aria-labelledby="gameShopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center sep-modal">
+                        <h2 class="fw-bold m-0">GAME SHOP</h2>
+                        <div class="separador py-2 mb-2"><h3 class="m-0"><i class="bi bi-star-fill"></i></h3></div>
+                        <div class="text-center">
+                            <img class="w-75" src="img/gameshop.jpeg" alt="game shop">
+                        </div>
+                        <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                            <p class="fw-semibold">Maquetación de una tienda de videojuegos, en este caso incluye el uso de todo lo aprendido y además fue realizada con scss y cuenta con un diseño responsivo.</p>
+                        </div>
+                        <a class="fw-semibold btn btn-main text-white border-0 mt-2 mb-4" href="https://juanpalaceto.github.io/GameShop/" target="_blank">
+                            <i class="bi bi-x fw-semibold"></i> Visitar Sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
